@@ -9,7 +9,7 @@ type CVEntryProps = {
 
 export default function CVEntry(props: CVEntryProps) {
   return (
-    <div className="border-l-4 border-slate-800 py-2 pl-4">
+    <div className="border-l-4 border-slate-800 py-2 dark:border-slate-400 pl-4">
       <div className="flex flex-col md:flex-row md:items-baseline md:justify-between">
         <h3 className="text-lg font-semibold">
           {props.title}, {props.employer}
