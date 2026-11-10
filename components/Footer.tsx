@@ -1,6 +1,8 @@
 import { SITE_NAME } from '@/lib/site'
 
-export default function Footer() {
+export default async function Footer() {
+  // Avec cacheComponents, new Date() doit être mis en cache (sinon le build échoue)
+  'use cache'
   const year = new Date().getFullYear()
 
   return (
